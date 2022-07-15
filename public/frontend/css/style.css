@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+.hero {
+    margin-top: 5%;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.social-media .fab {
+    font-size: 1.5rem;
+}
+
+
+/* .fa-twitter:hover,
+.fa-facebook-f:hover,
+.fa-instagram:hover {
+    color: #0d6efd;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.fa-youtube:hover {
+    color: red
+} */
+
+.nav-item a:hover {
+    border-bottom: .2px solid #0d6efd;
+}
+
+@media(min-width:768px) {}
