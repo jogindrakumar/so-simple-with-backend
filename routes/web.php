@@ -18,7 +18,10 @@ use App\Models\Admin;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+Route::get('/about', function () {
+    return view('frontend.about');
+})->name('about');
 
 Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
