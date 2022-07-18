@@ -23,6 +23,10 @@ Route::get('/about', function () {
     return view('frontend.about');
 })->name('about');
 
+Route::get('/project', function () {
+    return view('frontend.project');
+})->name('project');
+
 Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

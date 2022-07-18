@@ -21,7 +21,7 @@
         <div class="container justify-content-center">
             <div class="row">
                 <footer class="text-center">
-                    <p class=""> <span class="text-secondary">Design and Developed by</span> <a href="https://jogindrakumar.github.io/so-simple/" style="text-decoration: none;">Jogindra kumar</a> <span class="text-secondary">with</span> <i class="fas fa-heart text-danger"></i>                        and <i class="fas fa-code"></i></p>
+                    <p class=""> <span class="text-secondary">Developed by</span> <a href="https://jogindrakumar.github.io/so-simple/" style="text-decoration: none;">Jogindra kumar</a> <span class="text-secondary">with</span> <i class="fas fa-heart text-danger"></i>                        and <i class="fas fa-code"></i></p>
                 </footer>
             </div>
         </div>

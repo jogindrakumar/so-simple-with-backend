@@ -3,6 +3,38 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
 body::before {
     display: block;
     content: '';
@@ -39,6 +71,23 @@ body::before {
 
 .nav-item a:hover {
     border-bottom: .2px solid #0d6efd;
+}
+
+
+/* ===============================================
+Explore project  section Design
+=============================================== */
+
+.explore-project .card {
+    /* border: none; */
+    background-color: transparent;
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.explore-project .card img {
+    border-radius: 0.9375rem;
+    object-fit: cover;
 }
 
 @media(min-width:768px) {}

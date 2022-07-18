@@ -12,7 +12,7 @@
                         <a href="{{route('about')}}" class="nav-link text-primary">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="project.html" class="nav-link text-primary">Projects</a>
+                        <a href="{{route('project')}}" class="nav-link text-primary">Projects</a>
                     </li>
 
                     <li class="nav-item">
