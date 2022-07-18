@@ -26,6 +26,9 @@ Route::get('/about', function () {
 Route::get('/project', function () {
     return view('frontend.project');
 })->name('project');
+Route::get('/contact', function () {
+    return view('frontend.contact');
+})->name('contact');
 
 Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
