@@ -22,7 +22,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
                                 <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4"><i class="fab fa-github"></i></button>
+                                <button class="main-btn mt-4">Code</button>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
                                 <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4"><i class="fab fa-github"></i></button>
+                                <button class="main-btn mt-4">Code</button>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
                                 <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4"><i class="fab fa-github"></i></button>
+                                <button class="main-btn mt-4">Code</button>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
                                 <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4"><i class="fab fa-github"></i></button>
+                                <button class="main-btn mt-4">Code</button>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
                                 <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4"><i class="fab fa-github"></i></button>
+                                <button class="main-btn mt-4">Code</button>
                             </div>
                         </div>
                     </div>
