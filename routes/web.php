@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AdminProfileController;
+use App\Http\Controllers\Frontend\AboutController;
 use App\Models\Admin;
+use App\Models\About;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,13 +48,20 @@ Route::group(['prefix' => 'admin', 'middleware'=>['admin:admin']],function(){
 });
 
  //Admin All routes
+ Route::prefix('admin')->middleware(['auth:admin'])->group(function(){
+ Route::get('/logout',[AdminController::class,'destroy'])->name('admin.logout');
+ Route::get('/profile',[AdminProfileController::class,'AdminProfile'])->name('admin.profile');
+ Route::get('/profile/edit',[AdminProfileController::class,'AdminProfileEdit'])->name('admin.profile.edit');
+ Route::post('/profile/store',[AdminProfileController::class,'AdminProfileStore'])->name('admin.profile.store');
+ Route::get('/change/password',[AdminProfileController::class,'AdminChangePassword'])->name('admin.change.password');
+ Route::post('/update/password',[AdminProfileController::class,'AdminUpdatePassword'])->name('update.change.password');
+ });
 
- Route::get('/admin/logout',[AdminController::class,'destroy'])->name('admin.logout');
- Route::get('/admin/profile',[AdminProfileController::class,'AdminProfile'])->name('admin.profile');
- Route::get('/admin/profile/edit',[AdminProfileController::class,'AdminProfileEdit'])->name('admin.profile.edit');
- Route::post('/admin/profile/store',[AdminProfileController::class,'AdminProfileStore'])->name('admin.profile.store');
- Route::get('/admin/change/password',[AdminProfileController::class,'AdminChangePassword'])->name('admin.change.password');
- Route::post('/admin/update/password',[AdminProfileController::class,'AdminUpdatePassword'])->name('update.change.password');
+ Route::prefix('about')->middleware(['auth:admin'])->group(function(){
+
+    Route::get('/view',[AboutController::class,'index'])->name('aboutView');
+    Route::post('/store',[AboutController::class,'store'])->name('about.store');
+ });
 
  
 Route::middleware(['auth:sanctum,admin', 'verified'])->get('/admin/dashboard', function () {

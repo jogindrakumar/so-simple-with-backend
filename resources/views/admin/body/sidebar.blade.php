@@ -7,8 +7,8 @@
 				 <a href="index.html">
 				  <!-- logo for regular state and mobile devices -->
 					 <div class="d-flex align-items-center justify-content-center">					 	
-						  <img src="{{asset('backend/images/logo-dark.png')}}" alt="">
-						  <h3><b>Admin</b>-Dashboard</h3>
+						  
+						  <h3>jogindra kumar </h3> <p class="text-success" style="font-size: 1rem">(Admin)</p>
 					 </div>
 				</a>
 			</div>
@@ -27,13 +27,13 @@
         <li class="treeview">
           <a href="#">
             <i data-feather="message-circle"></i>
-            <span>Portfolio</span>
+            <span>About</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="ti-more"></i>View</a></li>
+            <li><a href="{{ route('aboutView') }}"><i class="ti-more"></i>View</a></li>
            
           </ul>
         </li> 
