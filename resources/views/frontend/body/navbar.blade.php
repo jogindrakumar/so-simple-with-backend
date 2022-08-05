@@ -14,9 +14,12 @@
                     <li class="nav-item">
                         <a href="{{route('project')}}" class="nav-link text-primary">Projects</a>
                     </li>
-
+                   
                     <li class="nav-item">
                         <a href="{{route('contact')}}" class="nav-link text-primary">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-primary">Buy</a>
                     </li>
                 </ul>
             </div>
