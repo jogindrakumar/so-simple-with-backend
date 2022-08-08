@@ -17,7 +17,8 @@ class AboutController extends Controller
     public function index()
     {
         //
-        return view('backend.about.index');
+        $abouts = About::all();
+        return view('backend.about.index',compact('abouts'));
     }
 
     /**
@@ -103,6 +104,8 @@ class AboutController extends Controller
     public function edit($id)
     {
         //
+        $abouts = About::findOrFail($id);
+        return view('backend.about.edit',compact('abouts'));
     }
 
     /**

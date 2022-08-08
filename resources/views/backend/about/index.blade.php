@@ -4,14 +4,18 @@
 <h1 class="text-center mb-3" style="border-bottom: 0.5px solid white;">About</h1>
     <div class="row">
         <div class="col-md-12">
-    <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+          @foreach ($abouts as $about)
+            
+        
+    <div class="card" style="width: 16rem;">
+  <img src="{{asset($about->img)}}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{$about->fname}}</h5>
+    <p class="card-text">{{$about->desp_1}}</p>
+    <a href="{{route('about.edit',$about->id)}}" class="btn btn-warning">Edit</a>
   </div>
 </div>
+  @endforeach
         </div>
         
     </div>

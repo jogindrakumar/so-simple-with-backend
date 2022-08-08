@@ -62,6 +62,8 @@ Route::group(['prefix' => 'admin', 'middleware'=>['admin:admin']],function(){
     Route::get('/view',[AboutController::class,'index'])->name('about.view');
     Route::get('/create',[AboutController::class,'create'])->name('about.create');
     Route::post('/store',[AboutController::class,'store'])->name('about.store');
+    Route::get('/edit/{id}',[AboutController::class,'edit'])->name('about.edit');
+    Route::post('/update/{id}',[AboutController::class,'update'])->name('about.update');
  });
 
  
