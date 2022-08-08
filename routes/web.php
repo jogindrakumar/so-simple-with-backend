@@ -59,7 +59,8 @@ Route::group(['prefix' => 'admin', 'middleware'=>['admin:admin']],function(){
 
  Route::prefix('about')->middleware(['auth:admin'])->group(function(){
 
-    Route::get('/view',[AboutController::class,'index'])->name('aboutView');
+    Route::get('/view',[AboutController::class,'index'])->name('about.view');
+    Route::get('/create',[AboutController::class,'create'])->name('about.create');
     Route::post('/store',[AboutController::class,'store'])->name('about.store');
  });
 

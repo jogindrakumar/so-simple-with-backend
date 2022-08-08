@@ -28,6 +28,7 @@ class AboutController extends Controller
     public function create()
     {
         //
+         return view('backend.about.create');
     }
 
     /**

@@ -33,7 +33,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{ route('aboutView') }}"><i class="ti-more"></i>View</a></li>
+            <li><a href="{{ route('about.view') }}"><i class="ti-more"></i>View</a></li>
+            <li><a href="{{ route('about.create') }}"><i class="ti-more"></i>Add</a></li>
            
           </ul>
         </li> 
