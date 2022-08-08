@@ -80,7 +80,7 @@ class AboutController extends Controller
                 'message' => 'about Inserted Successfully',
                 'alert-type' => 'success'
                     );
-            return redirect()->route('aboutView')->with($notification);
+            return redirect()->route('about.view')->with($notification);
     }
 
     /**
