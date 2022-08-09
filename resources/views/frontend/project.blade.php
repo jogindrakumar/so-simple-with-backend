@@ -21,20 +21,22 @@
                                 <h4>Coronation Industry</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
-                                <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4">Code</button>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
+                                <a href="#" class="main-btn mt-4" title="Buy"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                   <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="{{asset('frontend/img/project/devrath.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('frontend/img/project/coronation.png')}}" alt="" class="img-fluid">
                             <div class="pt-3">
-                                <h4>Math Academy</h4>
+                                <h4>Coronation Industry</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
-                                <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4">Code</button>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
+                                <a href="#" class="main-btn mt-4" title="Buy"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
@@ -42,14 +44,16 @@
                         <div class="card">
                             <img src="{{asset('frontend/img/project/coronation.png')}}" alt="" class="img-fluid">
                             <div class="pt-3">
-                                <h4>OmSai Computers</h4>
+                                <h4>Coronation Industry</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
-                                <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4">Code</button>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
+                                <a href="#" class="main-btn mt-4" title="Buy"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="row mt-3">
                     <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
@@ -59,8 +63,9 @@
                                 <h4>Coronation Industry</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
-                                <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4">Code</button>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
+                                <a href="#" class="main-btn mt-4" title="Buy"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
@@ -68,11 +73,12 @@
                         <div class="card">
                             <img src="{{asset('frontend/img/project/coronation.png')}}" alt="" class="img-fluid">
                             <div class="pt-3">
-                                <h4>Math Academy</h4>
+                                <h4>Coronation Industry</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
-                                <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4">Code</button>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
+                                <a href="#" class="main-btn mt-4" title="Buy"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
@@ -80,14 +86,17 @@
                         <div class="card">
                             <img src="{{asset('frontend/img/project/coronation.png')}}" alt="" class="img-fluid">
                             <div class="pt-3">
-                                <h4>OmSai Computers</h4>
+                                <h4>Coronation Industry</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
 
-                                <button class="main-btn mt-4">Live</button>
-                                <button class="main-btn mt-4">Code</button>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
+                                <a href="www.youtube.com" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
+                                <a href="#" class="main-btn mt-4" title="Buy"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>
