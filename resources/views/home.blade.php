@@ -3,10 +3,10 @@
  @extends('frontend.body.common')
 
 @section('card-title')
-Jogindra Kumar
+{{$abouts->fname}}
 @endsection
 @section('card-subtitle')
-web Developer
+{{$abouts->position}}
 @endsection
 @section('card-text')
    {{$abouts->desp_1}}

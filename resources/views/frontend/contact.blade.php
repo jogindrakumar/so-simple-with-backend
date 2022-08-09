@@ -10,7 +10,8 @@
         me
         @endsection
         @section('card-text')
-        Email : info@jogindrakumar.com <br>
+        
+        Email : {{$abouts->off_email}} <br>
        <p>Phone : +91 9868****11</p>
         @endsection
         

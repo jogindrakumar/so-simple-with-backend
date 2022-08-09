@@ -31,7 +31,8 @@ Route::get('/project', function () {
     return view('frontend.project');
 })->name('project');
 Route::get('/contact', function () {
-    return view('frontend.contact');
+    $abouts = About::first();
+    return view('frontend.contact',compact('abouts'));
 })->name('contact');
 
 Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function () {
