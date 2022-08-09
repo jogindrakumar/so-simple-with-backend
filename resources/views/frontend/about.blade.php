@@ -9,7 +9,11 @@ About
 me
 @endsection
 @section('card-text')
-Creative developer & designer crafting unique web experiences
+
+
+    {{$abouts->desp_2}}
+
+{{-- Creative developer & designer crafting unique web experiences --}}
 @endsection
 
 @section('button-link-1')

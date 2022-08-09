@@ -19,10 +19,12 @@ use App\Models\About;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $abouts = About::first();
+    return view('home',compact('abouts'));
 })->name('home');
 Route::get('/about', function () {
-    return view('frontend.about');
+    $abouts = About::first();
+    return view('frontend.about',compact('abouts'));
 })->name('about');
 
 Route::get('/project', function () {

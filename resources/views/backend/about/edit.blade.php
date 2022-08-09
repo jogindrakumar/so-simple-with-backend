@@ -51,7 +51,7 @@
                     <div class="col-md-6">
                     <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Twitter </label>
-                    <input type="text" class="form-control" name="twt" value="{{$abouts->wt}}">
+                    <input type="text" class="form-control" name="twt" value="{{$abouts->twt}}">
                     @error('twt')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
@@ -118,6 +118,7 @@
                    
                   </div>
                     </div>
+                    <input type="hidden" name="old_img" value="{{$abouts->img}}">
                     <div class="col-md-6">
                     <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Profile Photo </label>

@@ -9,7 +9,8 @@ Jogindra Kumar
 web Developer
 @endsection
 @section('card-text')
-Creative developer & designer crafting unique web experiences
+   {{$abouts->desp_1}}
+{{-- Creative developer & designer crafting unique web experiences --}}
 @endsection
 
 @section('button-link-1')

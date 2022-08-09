@@ -118,6 +118,53 @@ class AboutController extends Controller
     public function update(Request $request, $id)
     {
         //
+          $old_img = $request->old_img;
+       
+         if($request->file('img') ){
+
+            unlink($old_img); 
+                 $image = $request->file('img');
+                    $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
+                    Image::make($image)->resize(360,360)->save('upload/about/'.$name_gen);
+                    $save_url = 'upload/about/'.$name_gen;
+
+                
+
+        About::FindOrFail($id)->update([
+
+        'img'              =>   $save_url,
+       
+        ]);
+         $notification = array(
+            'message' => 'your profile picture Updated Successfully',
+            'alert-type' => 'success'
+                );
+        return redirect()->route('about.view')->with($notification);
+         }else{
+
+            
+        About::FindOrFail($id)->update([
+
+            'fname'                 => $request->fname,
+            'position'              => $request->position,
+            'desp_1'               => $request->desp_1,
+            'desp_2'                => $request->desp_2,
+            'twt'                   => $request->twt,
+            'insta'                 => $request->insta,
+            'fb'                    => $request->fb,
+            'youtube'               => $request->youtube,
+            'p_email'               => $request->p_email,
+            'off_email'             => $request->off_email,
+            'phone'                 => $request->phone, 
+       
+        ]);
+         $notification = array(
+            'message' => 'your profile details Updated Successfully',
+            'alert-type' => 'success'
+                );
+        return redirect()->route('about.view')->with($notification);
+
+         }
     }
 
     /**
