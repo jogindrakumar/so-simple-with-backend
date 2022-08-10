@@ -19,7 +19,7 @@
                   
                     <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="{{asset('frontend/img/project/coronation.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset($project->img)}}" alt="" class="img-fluid">
                             <div class="pt-3">
                                 <h4>{{$project->project_name}}</h4>
                                 <p>{{$project->descp}}</p>

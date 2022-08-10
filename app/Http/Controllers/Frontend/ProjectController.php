@@ -81,6 +81,8 @@ class ProjectController extends Controller
     public function edit($id)
     {
         //
+         $projects = Project::findOrFail($id);
+        return view('backend.project.edit',compact('projects'));
     }
 
     /**
@@ -93,6 +95,48 @@ class ProjectController extends Controller
     public function update(Request $request, $id)
     {
         //
+         $old_img = $request->old_img;
+       
+         if($request->file('img') ){
+
+            unlink($old_img); 
+                 $image = $request->file('img');
+                $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
+                Image::make($image)->resize(1897,955)->save('upload/project/'.$name_gen);
+                $save_url = 'upload/project/'.$name_gen;
+
+                
+
+        Project::FindOrFail($id)->update([
+
+        'img'              =>   $save_url,
+       
+        ]);
+         $notification = array(
+            'message' => 'project image Updated Successfully',
+            'alert-type' => 'success'
+                );
+        return redirect()->route('project.view')->with($notification);
+         }else{
+
+            
+        Project::FindOrFail($id)->update([
+
+             'project_name'       => $request->project_name,
+            'descp'              => $request->descp,
+            'live_link'          => $request->live_link,
+            'youtube_link'       => $request->youtube_link,
+            'buy_link'           => $request->buy_link,
+        
+       
+        ]);
+         $notification = array(
+            'message' => 'your project details Updated Successfully',
+            'alert-type' => 'success'
+                );
+        return redirect()->route('project.view')->with($notification);
+
+         }
     }
 
     /**
@@ -104,5 +148,16 @@ class ProjectController extends Controller
     public function destroy($id)
     {
         //
+         $old_project_img = Project::findOrFail($id);
+    	$img = $old_project_img->img;
+    	unlink($img);
+        
+       Project::FindOrFail($id)->delete();
+
+         $notification = array(
+                        'message' => 'Project Delete Successfully',
+                        'alert-type' => 'info'
+                            );
+                    return redirect()->back()->with($notification);
     }
 }

@@ -2,9 +2,13 @@
 @section('main_content')
 <div class="container">
 <h1 class="text-center mb-3" style="border-bottom: 0.5px solid white;">Project Collection</h1>
+<div class="mb-2">
+  <a href="{{route('project.create')}}" class="btn btn-success"><i data-feather="plus-circle"></i></a>
+</div>
     <div class="row">
-        <div class="col-md-12">
-          @foreach ($projects as $project)
+       @foreach ($projects as $project)
+        <div class="col-md-3">
+         
             
        
     <div class="card" style="width: 16rem;">
@@ -16,8 +20,9 @@
     <a href="{{route('project.delete',$project->id)}}" class="btn btn-danger">Delete</a>
   </div>
 </div>
-  @endforeach
+  
         </div>
+        @endforeach
         
     </div>
 </div>

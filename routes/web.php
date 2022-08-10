@@ -78,7 +78,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>['admin:admin']],function(){
     Route::post('/store',[ProjectController::class,'store'])->name('project.store');
     Route::get('/edit/{id}',[ProjectController::class,'edit'])->name('project.edit');
     Route::post('/update/{id}',[ProjectController::class,'update'])->name('project.update');
-    Route::post('/delete/{id}',[ProjectController::class,'destroy'])->name('project.delete');
+    Route::get('/delete/{id}',[ProjectController::class,'destroy'])->name('project.delete');
  });
 
  
