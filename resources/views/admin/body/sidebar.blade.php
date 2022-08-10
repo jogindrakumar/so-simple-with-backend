@@ -42,13 +42,14 @@
           <a href="#">
             
             <i data-feather="sliders"></i>
-            <span>Slider</span>
+            <span>Projects</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="ti-more"></i>View Slider</a></li>
+           <li><a href="{{ route('project.view') }}"><i class="ti-more"></i>View</a></li>
+            <li><a href="{{ route('project.create') }}"><i class="ti-more"></i>Add</a></li>
             
           </ul>
         </li> 

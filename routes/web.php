@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\ProjectController;
 use App\Models\Admin;
 use App\Models\About;
 
@@ -67,6 +68,14 @@ Route::group(['prefix' => 'admin', 'middleware'=>['admin:admin']],function(){
     Route::post('/store',[AboutController::class,'store'])->name('about.store');
     Route::get('/edit/{id}',[AboutController::class,'edit'])->name('about.edit');
     Route::post('/update/{id}',[AboutController::class,'update'])->name('about.update');
+ });
+ Route::prefix('project')->middleware(['auth:admin'])->group(function(){
+
+    Route::get('/view',[ProjectController::class,'index'])->name('project.view');
+    Route::get('/create',[ProjectController::class,'create'])->name('project.create');
+    Route::post('/store',[ProjectController::class,'store'])->name('project.store');
+    Route::get('/edit/{id}',[ProjectController::class,'edit'])->name('project.edit');
+    Route::post('/update/{id}',[ProjectController::class,'update'])->name('project.update');
  });
 
  
