@@ -15,7 +15,7 @@
   <img src=" {{asset($project->img)}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{$project->project_name}}</h5>
-    {{-- <p class="card-text" maxlength="50">{{$project->descp}}</p> --}}
+   
     <a href="{{route('project.edit',$project->id)}}" class="btn btn-warning">Edit</a>
     <a href="{{route('project.delete',$project->id)}}" class="btn btn-danger">Delete</a>
   </div>
