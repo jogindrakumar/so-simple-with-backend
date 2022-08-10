@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
-
+use App\Models\Project;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class ProjectController extends Controller
 {
@@ -15,8 +16,8 @@ class ProjectController extends Controller
     public function index()
     {
         //
-
-        return view('backend.project.index');
+        $projects = Project::all();
+        return view('backend.project.index',compact('projects'));
     }
 
     /**
@@ -27,6 +28,7 @@ class ProjectController extends Controller
     public function create()
     {
         //
+        return view('backend.project.create');
     }
 
     /**
@@ -38,6 +40,25 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         //
+         $image = $request->file('img');
+        $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
+        Image::make($image)->resize(1897,955)->save('upload/project/'.$name_gen);
+        $save_url = 'upload/project/'.$name_gen;
+
+        Project::insert([
+
+            'project_name'       => $request->project_name,
+            'descp'              => $request->descp,
+            'live_link'          => $request->live_link,
+            'youtube_link'       => $request->youtube_link,
+            'buy_link'           => $request->buy_link,
+            'img'                => $save_url,
+            ]);
+             $notification = array(
+                'message' => 'PROJECT Inserted Successfully',
+                'alert-type' => 'success'
+                    );
+            return redirect()->route('project.view')->with($notification);
     }
 
     /**

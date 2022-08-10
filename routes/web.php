@@ -7,6 +7,7 @@ use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\ProjectController;
 use App\Models\Admin;
 use App\Models\About;
+use App\Models\Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,8 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/project', function () {
-    return view('frontend.project');
+    $projects = Project::all();
+    return view('frontend.project',compact('projects'));
 })->name('project');
 Route::get('/contact', function () {
     $abouts = About::first();
@@ -76,6 +78,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>['admin:admin']],function(){
     Route::post('/store',[ProjectController::class,'store'])->name('project.store');
     Route::get('/edit/{id}',[ProjectController::class,'edit'])->name('project.edit');
     Route::post('/update/{id}',[ProjectController::class,'update'])->name('project.update');
+    Route::post('/delete/{id}',[ProjectController::class,'destroy'])->name('project.delete');
  });
 
  

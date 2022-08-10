@@ -1,21 +1,22 @@
 @extends('admin.admin_master')
 @section('main_content')
 <div class="container">
-<h1 class="text-center mb-3" style="border-bottom: 0.5px solid white;">About</h1>
+<h1 class="text-center mb-3" style="border-bottom: 0.5px solid white;">Project Collection</h1>
     <div class="row">
         <div class="col-md-12">
-          {{-- @foreach ($abouts as $about) --}}
+          @foreach ($projects as $project)
             
-        {{-- {{asset($project->img)}} --}}
+       
     <div class="card" style="width: 16rem;">
-  <img src="" class="card-img-top" alt="...">
+  <img src=" {{asset($project->img)}}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
-    {{-- <a href="{{route('project.edit',$about->id)}}" class="btn btn-warning">Edit</a> --}}
+    <h5 class="card-title">{{$project->project_name}}</h5>
+    {{-- <p class="card-text" maxlength="50">{{$project->descp}}</p> --}}
+    <a href="{{route('project.edit',$project->id)}}" class="btn btn-warning">Edit</a>
+    <a href="{{route('project.delete',$project->id)}}" class="btn btn-danger">Delete</a>
   </div>
 </div>
-  {{-- @endforeach --}}
+  @endforeach
         </div>
         
     </div>
