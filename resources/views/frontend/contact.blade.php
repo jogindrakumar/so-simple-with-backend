@@ -11,7 +11,7 @@
         @endsection
         @section('card-text')
         
-        Email : {{$abouts->off_email}} <br>
+        Email : <a href = "mailto: info@jogindrakumar.com" style="text-decoration: none;font-weight:700;">{{$abouts->off_email}}</a> <br>
        <p>Phone : +91 9868****11</p>
         @endsection
         
