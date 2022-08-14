@@ -19,7 +19,7 @@
                         <a href="{{route('contact')}}" class="nav-link text-primary">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-primary">Buy</a>
+                        <a href="#" class="nav-link text-primary" title="Not Active">Buy</a>
                     </li>
                 </ul>
             </div>

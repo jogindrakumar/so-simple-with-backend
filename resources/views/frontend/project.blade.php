@@ -8,7 +8,7 @@
                     <div class="col-sm-12">
                         <div class="text-content text-center">
                             <h2>Explore Project</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum distinctio non deserunt corrupti provident, ullam minus cum ducimus quidem ratione. Vitae illo sit qui illum ipsam iste animi recusandae possimus!</p>
+                            <p>“I love what I do and I do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites.”</p>
 
                         </div>
                     </div>
