@@ -24,8 +24,8 @@
                                 <h4>{{$project->project_name}}</h4>
                                 <p>{{$project->descp}}</p>
 
-                                <a href="www.youtube.com" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
-                                <a href="www.youtube.com" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
+                                <a href="{{ $project->live_link }}" class="main-btn mt-4" title="Live"><i class="fas fa-globe"></i></a>
+                                <a href="{{ $project->youtube_link }}" class="main-btn mt-4" title="Youtube"><i class="fas fa-play"></i></a>
                                 <a href="#" class="main-btn mt-4" title="Buy"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
